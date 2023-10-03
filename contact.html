@@ -1,0 +1,111 @@
+<html>
+    <head>
+        <title>Educational Website</title>
+        <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    <body>
+        <div class="top-bar">
+            <span><ion-icon name="call-outline"></ion-icon> 72075 79587</span>
+            <ul>
+                <li><a href="https://www.youtube.com/@OrchidsTheInternationalSchool"><ion-icon name="logo-youtube"></ion-icon></a></li>
+                <li><a href="https://twitter.com/orchids_school?lang=en"><ion-icon name="logo-twitter"></ion-icon></a></li>
+                <li><a href="https://www.orchidsinternationalschool.com"><ion-icon name="help-outline"></ion-icon></a></li>
+            </ul>
+        </div>
+
+
+        <nav>
+            <div class="logo">
+                <a href="#"><img src="/schema-logo.jpg" alt="logo"></a>
+            </div>
+            <div class="toggle">
+                <a href="#"><ion-icon name="menu-outline"></ion-icon></a>
+            </div>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="about.html">About</a></li>
+            </ul>
+        </nav>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+        <script>
+
+            $(function(){
+                $(".toggle").on("click", function(){
+                    if($(".menu").hasClass("active")){
+                        $(".menu").removeClass("active");
+                        $(this).find("a").html("<ion-icon name='menu-outline'></ion-icon>");
+                    } else {
+                        $(".menu").addClass("active");
+                        $(this).find("a").html("<ion-icon name='close-outline'></ion-icon>");
+                    }
+                });
+            });
+
+        </script>
+<div class="container1">
+    <div class="contact-box">
+        <div class="contact-left">
+            <h3>Contact Us</h3>
+            <h4>We would love to respond to your queries and help you succeed. Feel free to get in touch with us.</h4>
+            <form>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Name</label>
+                        <input type="text" placeholder="Your child's name">
+                    </div>
+                    <div class="input-group">
+                        <label>Phone</label>
+                        <input type="text" placeholder="Indian Phone No.">
+                    </div>
+                </div>
+                <div class="input-row">
+                    <div class="input-group">
+                        <label>Email </label>
+                        <input type="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="input-group">
+                        <label>Subject</label>
+                        <input type="text" placeholder="Admission">
+                    </div>
+                </div>
+                <label>Message</label>
+                <textarea rows="5" placeholder="Your Message"></textarea>
+                <button type="submit" onclick="myFunction()">SEND</button>
+                <script>
+                    function myFunction() {
+                      alert("Sent! You will receive an SMS or an email to start the admission stage.");
+                    }
+                    </script>
+
+            </form>
+        </div>
+        <div class="contact-right">
+            <h3>Reach us</h3>
+
+            <table>
+                <tr>
+                    <td>Email</td>
+                    <td>info@orchids.edu.in</td>
+                </tr>
+                <tr>
+                    <td>Phone</td>
+                    <td>+91 8-888-888-999</td>
+                </tr>
+                <tr>
+                    <td>Address</td>
+                    <td>Rd Number 36, Kakatiya Hills, Kavuri Hills Phase 1, Kavuri Hills, Jubilee Hills, Hyderabad, Telangana 500033</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</div>
+</div>
+<div class="footerBottom">
+    <h4>Orchids The International School<h4>
+</div>
+    </body>
+</html>
